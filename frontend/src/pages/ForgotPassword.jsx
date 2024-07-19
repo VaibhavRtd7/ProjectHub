@@ -42,8 +42,8 @@ export default function ForgotPassword() {
 				<form className="flex flex-col  justify-center" onSubmit={(e) => sendEmail(e)}>
 
 					<input required type="email" onChange={(e) => { setEmail(e.target.value) }}
-						placeholder="Email" name="email" className="w-full px-3 py-1 my-3 rounded-md dark:bg-neutral-800 outline-none transition-all border dark:border-neutral-700 border-neutral-400 focus:border-violet-500 focus:ring-1 focus:ring-violet-200" />
-					<button type="submit" className="w-full px-3 py-1 my-3 text-neutral-200 rounded-md bg-violet-600 hover:bg-violet-500 transition-all duration-300" >Submit</button>
+						placeholder="Email" name="email" className="w-full px-3 py-1 my-3 rounded-md dark:bg-neutral-800 outline-none transition-all border dark:border-neutral-700 border-neutral-400 focus:border-blue-500 focus:ring-1 focus:ring-blue-200" />
+					<button type="submit" className="w-full px-3 py-1 my-3 text-neutral-200 rounded-md bg-blue-600 hover:bg-blue-500 transition-all duration-300" >Submit</button>
 				</form>
 			</div>
 

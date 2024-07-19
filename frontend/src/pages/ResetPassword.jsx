@@ -63,10 +63,10 @@ export default function ResetPassword() {
 					<form className="flex flex-col  justify-center" onSubmit={(e) => savePassword(e)}>
 
 						<input required type="password" onChange={(e) => { setPassword(e.target.value) }}
-							placeholder="New Password" name="password" className="w-full px-3 py-1 my-3 rounded-md dark:bg-neutral-800 outline-none transition-all border dark:border-neutral-700 border-neutral-400 focus:border-violet-500 focus:ring-1 focus:ring-violet-200" />
+							placeholder="New Password" name="password" className="w-full px-3 py-1 my-3 rounded-md dark:bg-neutral-800 outline-none transition-all border dark:border-neutral-700 border-neutral-400 focus:border-blue-500 focus:ring-1 focus:ring-blue-200" />
 						<input required type="password" placeholder="confirm Password" onChange={(e) => { setConfirmPassword(e.target.value) }}
-							name="confirmpassword" className="w-full px-3 py-1 my-3 rounded-md dark:bg-neutral-800 outline-none transition-all border dark:border-neutral-700 border-neutral-400 focus:border-violet-500 focus:ring-1 focus:ring-violet-200" />
-						<button type="submit" className="w-full px-3 py-1 my-3 text-neutral-200 rounded-md bg-violet-600 hover:bg-violet-500 transition-all duration-300" >Submit</button>
+							name="confirmpassword" className="w-full px-3 py-1 my-3 rounded-md dark:bg-neutral-800 outline-none transition-all border dark:border-neutral-700 border-neutral-400 focus:border-blue-500 focus:ring-1 focus:ring-blue-200" />
+						<button type="submit" className="w-full px-3 py-1 my-3 text-neutral-200 rounded-md bg-blue-600 hover:bg-blue-500 transition-all duration-300" >Submit</button>
 					</form>
 				</div>
 			}

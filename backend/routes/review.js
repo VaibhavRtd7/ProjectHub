@@ -139,7 +139,7 @@ const sendReviewMail = async (email, projectId, review) => {
                 }
                 .button {
                     display: inline-block;
-                    background-color: violet;
+                    background-color: blue;
                     color: white;
                     border-radius:10px;
                     padding: 10px 20px;

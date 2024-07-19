@@ -143,7 +143,7 @@ function Review({ _id, text, rating, status, author, project, comments, onDelete
                             {
                                 project.author !== user?._id ?
                                     <>
-                                        <span className={`rounded-3xl  flex max-w-fit items-center  ${status == "pending" ? "bg-violet-400" : (status == "solved" ? "bg-green-400" : "bg-red-400")} capitalize text-black  py-0.5 px-3 gap-1  transition-all duration-300 shadow-lg max-sm:text-sm`}>
+                                        <span className={`rounded-3xl  flex max-w-fit items-center  ${status == "pending" ? "bg-blue-400" : (status == "solved" ? "bg-green-400" : "bg-red-400")} capitalize text-black  py-0.5 px-3 gap-1  transition-all duration-300 shadow-lg max-sm:text-sm`}>
                                             {status}
                                         </span>
                                         {rating && rating != 0 &&
@@ -156,7 +156,7 @@ function Review({ _id, text, rating, status, author, project, comments, onDelete
                                     <>
                                         <select value={newStatus} name="status" onChange={(e) => {
                                             setNewStatus(e.target.value);
-                                        }} className={`rounded-3xl flex items-center   ${newStatus == "pending" ? "bg-violet-400" : (newStatus == "solved" ? "bg-green-400" : "bg-red-400")} py-0.5 capitalize text-black   px-1   transition-all max-sm:text-sm duration-300 shadow-lg`}  >
+                                        }} className={`rounded-3xl flex items-center   ${newStatus == "pending" ? "bg-blue-400" : (newStatus == "solved" ? "bg-green-400" : "bg-red-400")} py-0.5 capitalize text-black   px-1   transition-all max-sm:text-sm duration-300 shadow-lg`}  >
                                             <option value="pending">pending</option>
                                             <option value="solved">solved</option>
                                             <option value="rejected">rejected</option>
@@ -194,7 +194,7 @@ function Review({ _id, text, rating, status, author, project, comments, onDelete
                         <button onClick={handleUpVote} className='flex gap-1 px-3 py-2 rounded-xl items-center dark:hover:bg-neutral-800/30 hover:bg-neutral-200'>
                             <BiSolidUpvote className={`text-xl  ${upVoteState.upVote.includes(user._id) ? 'text-green-500' : ""}`} />
                             <span className='w-5 h-5 text-sm flex justify-center items-center '>{upVoteState.upVoteCount}</span>
-                            {loadingUpVote && <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-violet-700"></div>}
+                            {loadingUpVote && <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-blue-700"></div>}
                         </button>
                         <button onClick={() => setIsOpen(!isOpen)} className='flex gap-1  px-3 py-2 rounded-xl items-center dark:hover:bg-neutral-800/30 hover:bg-neutral-200'>
                             <GoCommentDiscussion className='text-xl' />
@@ -210,8 +210,8 @@ function Review({ _id, text, rating, status, author, project, comments, onDelete
                         <div className='flex flex-col relative py-2'>
                             <h1 className='text-2xl my-2 text-center'>Discuss</h1>
                             <div className='flex gap-3 sm:w-2/3 w-full max-sm:px-3 items-center mx-auto'>
-                                <input value={Comment} onChange={(e) => setComment(e.target.value)} type="text" className='w-[80%] px-3 py-1 my-2 rounded-md dark:bg-neutral-900 outline-none  border dark:border-neutral-800 border-neutral-400 focus:border-violet-500 focus:ring-1 focus:ring-neutral-700' />
-                                <button onClick={doComment} className='w-[20%] px-2 py-1.5 my-2 text-neutral-200 rounded-md bg-violet-600 hover:bg-violet-500 transition-all duration-300 max-sm:text-sm'>
+                                <input value={Comment} onChange={(e) => setComment(e.target.value)} type="text" className='w-[80%] px-3 py-1 my-2 rounded-md dark:bg-neutral-900 outline-none  border dark:border-neutral-800 border-neutral-400 focus:border-blue-500 focus:ring-1 focus:ring-neutral-700' />
+                                <button onClick={doComment} className='w-[20%] px-2 py-1.5 my-2 text-neutral-200 rounded-md bg-blue-600 hover:bg-blue-500 transition-all duration-300 max-sm:text-sm'>
                                     Comment
                                 </button>
                             </div>
@@ -225,7 +225,7 @@ function Review({ _id, text, rating, status, author, project, comments, onDelete
                             <div className='sm:w-2/3 w-full max-sm:px-3 flex flex-col gap-4 mx-auto'>
                                 {
                                     commentList.length == 0 ?
-                                        <p className="text-center text-violet-600 text-2xl block "> No comment yet!!</p>
+                                        <p className="text-center text-blue-600 text-2xl block "> No comment yet!!</p>
                                         :
                                         commentList.map((value, index) => {
                                             return <CommentBox key={index} {...value} />

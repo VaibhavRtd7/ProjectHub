@@ -113,13 +113,13 @@ export default function EditProfile() {
                                 <input value={userInfo.name || ""} onChange={(e) => {
                                     userInfo.name = e.target.value;
                                     setUserInfo({ ...userInfo })
-                                }} className="w-full px-3 py-1 my-3 rounded-md dark:bg-neutral-800 outline-none transition-all border dark:border-neutral-700 border-neutral-400 focus:border-violet-500 focus:ring-1 focus:ring-violet-200" type="url" placeholder={`Name`} />
+                                }} className="w-full px-3 py-1 my-3 rounded-md dark:bg-neutral-800 outline-none transition-all border dark:border-neutral-700 border-neutral-400 focus:border-blue-500 focus:ring-1 focus:ring-blue-200" type="url" placeholder={`Name`} />
 
                                 {socialMedia.map((social, index) => {
                                     return <input key={index} value={userInfo.socialMediaLinks[social]} onChange={(e) => {
                                         userInfo.socialMediaLinks[social] = e.target.value;
                                         setUserInfo({ ...userInfo })
-                                    }} className="w-full px-3 py-1 my-3 rounded-md dark:bg-neutral-800 outline-none transition-all border dark:border-neutral-700 border-neutral-400 focus:border-violet-500 focus:ring-1 focus:ring-violet-200" type="url" placeholder={`${social} Link`} />
+                                    }} className="w-full px-3 py-1 my-3 rounded-md dark:bg-neutral-800 outline-none transition-all border dark:border-neutral-700 border-neutral-400 focus:border-blue-500 focus:ring-1 focus:ring-blue-200" type="url" placeholder={`${social} Link`} />
                                 })}
                             </div>
                         }
@@ -128,11 +128,11 @@ export default function EditProfile() {
                         <img src={(file && URL.createObjectURL(file)) || userInfo.profilePicture || '/user.png'} alt="Profile" className="w-60 rounded-full aspect-square object-cover" />
                         <div className="p-3 flex gap-2 max-md:flex-wrap">
                             <input onChange={(e) => { setFile(e.target.files[0]); }} accept="image/*" className="block w-full text-lg text-neutral-900 border border-neutral-300 rounded-lg cursor-pointer bg-neutral-50 dark:text-neutral-400 focus:outline-none dark:bg-neutral-700 dark:border-neutral-600 dark:placeholder-neutral-400" id="file_input" type="file" />
-                            <button onClick={() => { setFile(null); userInfo.profilePicture = '/user.png'; setUserInfo({ ...userInfo }) }} className="flex-shrink-0 px-2 py-1 text-base font-semibold text-white bg-violet-500 rounded-3xl shadow-md hover:bg-violet-400 hover:scale-95 transition-all">Remove</button>
+                            <button onClick={() => { setFile(null); userInfo.profilePicture = '/user.png'; setUserInfo({ ...userInfo }) }} className="flex-shrink-0 px-2 py-1 text-base font-semibold text-white bg-blue-500 rounded-3xl shadow-md hover:bg-blue-400 hover:scale-95 transition-all">Remove</button>
                         </div>
                     </div>
                 </div>
-                <button onClick={handleSubmit} className="flex-shrink-0 px-2 py-2 text-base font-semibold text-white bg-violet-500 rounded shadow-md hover:bg-violet-400  transition-all">Save</button>
+                <button onClick={handleSubmit} className="flex-shrink-0 px-2 py-2 text-base font-semibold text-white bg-blue-500 rounded shadow-md hover:bg-blue-400  transition-all">Save</button>
             </div>
         </>
     )

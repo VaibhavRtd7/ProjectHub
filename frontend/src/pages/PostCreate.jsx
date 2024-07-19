@@ -77,20 +77,20 @@ export default function PostCreate() {
 
                     <textarea name="description" onChange={(e) => {
                         setProject({ ...project, [e.target.name]: e.target.value })
-                    }} placeholder='Description of your project' className='w-full resize-none px-3 py-1 my-3 rounded-md dark:bg-neutral-800 outline-none transition-all border dark:border-neutral-700 border-neutral-400 focus:border-violet-500 focus:ring-1 focus:ring-violet-200' cols="30" rows="10">
+                    }} placeholder='Description of your project' className='w-full resize-none px-3 py-1 my-3 rounded-md dark:bg-neutral-800 outline-none transition-all border dark:border-neutral-700 border-neutral-400 focus:border-blue-500 focus:ring-1 focus:ring-blue-200' cols="30" rows="10">
 
                     </textarea>
                     <input required type="url" placeholder="Link of Your Project" onChange={(e) => {
                         setProject({ ...project, [e.target.name]: e.target.value })
-                    }} name="link" className="w-full px-3 py-1 my-3 rounded-md dark:bg-neutral-800 outline-none transition-all border dark:border-neutral-700 border-neutral-400 focus:border-violet-500 focus:ring-1 focus:ring-violet-200" />
+                    }} name="link" className="w-full px-3 py-1 my-3 rounded-md dark:bg-neutral-800 outline-none transition-all border dark:border-neutral-700 border-neutral-400 focus:border-blue-500 focus:ring-1 focus:ring-blue-200" />
 
                     <div className="flex gap-2 flex-wrap">{project.technologies.map((value, index) => {
-                        return <span key={index} className="rounded-3xl  flex max-w-fit items-center  bg-violet-400 text-black py-0.5 px-3 gap-1  transition-all duration-300 shadow-lg ">
+                        return <span key={index} className="rounded-3xl  flex max-w-fit items-center  bg-blue-400 text-black py-0.5 px-3 gap-1  transition-all duration-300 shadow-lg ">
                             <span className="pb-0.5">{value}</span>
                             <button onClick={() => {
                                 project.technologies.splice(index, 1);
                                 setProject({ ...project, technologies: project.technologies });
-                            }} className="p-1 rounded-full hover:bg-violet-500 transition-all">
+                            }} className="p-1 rounded-full hover:bg-blue-500 transition-all">
                                 <IoClose className="text-lg text-gray-900" />
                             </button>
                         </span>
@@ -123,7 +123,7 @@ export default function PostCreate() {
                             }
                             setInput('');
                         }
-                    }} className="w-full px-3 py-1 my-3 rounded-md dark:bg-neutral-800 outline-none transition-all border dark:border-neutral-700 border-neutral-400 focus:border-violet-500 focus:ring-1 focus:ring-violet-200" />
+                    }} className="w-full px-3 py-1 my-3 rounded-md dark:bg-neutral-800 outline-none transition-all border dark:border-neutral-700 border-neutral-400 focus:border-blue-500 focus:ring-1 focus:ring-blue-200" />
 
                     <input type="file" accept=".jpg, .jpeg, .png" onChange={(e) => {
                         if (images.length >= 3) {
@@ -135,7 +135,7 @@ export default function PostCreate() {
                             return;
                         }
                         setImages([...images, ...e.target.files]);
-                    }} className="w-full my-3 rounded-md dark:bg-neutral-800 outline-none transition-all border dark:border-neutral-700 border-neutral-400 focus:border-violet-500 focus:ring-1 focus:ring-neutral-500-200" />
+                    }} className="w-full my-3 rounded-md dark:bg-neutral-800 outline-none transition-all border dark:border-neutral-700 border-neutral-400 focus:border-blue-500 focus:ring-1 focus:ring-neutral-500-200" />
                     <div className="w-full overflow-x-scroll flex snap-x snap-mandatory ">
                         {images.map((value, index) => {
                             return <div key={index} className="min-w-full py-4 relative flex justify-center  snap-start img">
@@ -143,13 +143,13 @@ export default function PostCreate() {
                                 <button onClick={() => {
                                     images.splice(index, 1);
                                     setImages([...images]);
-                                }} className="p-1 rounded-full absolute z-20 top-2 right-3 hover:bg-violet-500 transition-all">
+                                }} className="p-1 rounded-full absolute z-20 top-2 right-3 hover:bg-blue-500 transition-all">
                                     <IoClose className="text-lg " />
                                 </button>
                             </div>
                         })}
                     </div>
-                    <button type="submit" className="w-full px-3 py-1 my-3 text-neutral-200 rounded-md bg-violet-600 hover:bg-violet-500 transition-all duration-300" >Submit</button>
+                    <button type="submit" className="w-full px-3 py-1 my-3 text-neutral-200 rounded-md bg-blue-600 hover:bg-blue-500 transition-all duration-300" >Submit</button>
                 </form>
             </div>
         </>

@@ -48,14 +48,14 @@ export default function Login({ isAuthenticated, setIsAuthenticated }) {
 
                     <input required type="text" onChange={(e) => {
                         setUserInfo({ ...userInfo, [e.target.name]: e.target.value })
-                    }} placeholder="Username or Email" name="email" className="w-full px-3 py-1 my-3 rounded-md dark:bg-neutral-800 outline-none transition-all border dark:border-neutral-700 border-neutral-400 focus:border-violet-500 focus:ring-1 focus:ring-violet-200" />
+                    }} placeholder="Username or Email" name="email" className="w-full px-3 py-1 my-3 rounded-md dark:bg-neutral-800 outline-none transition-all border dark:border-neutral-700 border-neutral-400 focus:border-blue-500 focus:ring-1 focus:ring-blue-200" />
                     <input required type="password" placeholder="Password" onChange={(e) => {
                         setUserInfo({ ...userInfo, [e.target.name]: e.target.value })
-                    }} name="password" className="w-full px-3 py-1 my-3 rounded-md dark:bg-neutral-800 outline-none transition-all border dark:border-neutral-700 border-neutral-400 focus:border-violet-500 focus:ring-1 focus:ring-violet-200" />
+                    }} name="password" className="w-full px-3 py-1 my-3 rounded-md dark:bg-neutral-800 outline-none transition-all border dark:border-neutral-700 border-neutral-400 focus:border-blue-500 focus:ring-1 focus:ring-blue-200" />
 
-                    <button type="submit" className="w-full px-3 py-1 my-3 text-neutral-200 rounded-md bg-violet-600 hover:bg-violet-500 transition-all duration-300" >Submit</button>
-                    <p className="text-sm">Do not have an account? <Link to={'/signup'} className="underline text-violet-400">SignUp</Link></p>
-                    <p className="text-sm">Forgot your password? <Link to={'/forgot-password'} className="underline text-violet-400">Reset Password</Link></p>
+                    <button type="submit" className="w-full px-3 py-1 my-3 text-neutral-200 rounded-md bg-blue-600 hover:bg-blue-500 transition-all duration-300" >Submit</button>
+                    <p className="text-sm">Do not have an account? <Link to={'/signup'} className="underline text-blue-400">SignUp</Link></p>
+                    <p className="text-sm">Forgot your password? <Link to={'/forgot-password'} className="underline text-blue-400">Reset Password</Link></p>
                 </form>
             </div>
 

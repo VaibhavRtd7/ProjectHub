@@ -38,16 +38,16 @@ export default function Signup() {
 
                     <input required type="text" onChange={(e) => {
                         setUserInfo({ ...userInfo, [e.target.name]: e.target.value })
-                    }} placeholder="username" name="username" className="w-full px-3 py-1 my-3 rounded-md dark:bg-neutral-800 outline-none transition-all border dark:border-neutral-700 border-neutral-400 focus:border-violet-500 focus:ring-1 focus:ring-violet-200" />
+                    }} placeholder="username" name="username" className="w-full px-3 py-1 my-3 rounded-md dark:bg-neutral-800 outline-none transition-all border dark:border-neutral-700 border-neutral-400 focus:border-blue-500 focus:ring-1 focus:ring-blue-200" />
                     <input required type="email" onChange={(e) => {
                         setUserInfo({ ...userInfo, [e.target.name]: e.target.value })
-                    }} placeholder="Email" name="email" className="w-full px-3 py-1 my-3 rounded-md dark:bg-neutral-800 outline-none transition-all border dark:border-neutral-700 border-neutral-400 focus:border-violet-500 invalid:focus:border-red-500 focus:ring-1 focus:ring-violet-200 invalid:focus:ring-red-200" />
+                    }} placeholder="Email" name="email" className="w-full px-3 py-1 my-3 rounded-md dark:bg-neutral-800 outline-none transition-all border dark:border-neutral-700 border-neutral-400 focus:border-blue-500 invalid:focus:border-red-500 focus:ring-1 focus:ring-blue-200 invalid:focus:ring-red-200" />
                     <input required type="password" placeholder="Password" onChange={(e) => {
                         setUserInfo({ ...userInfo, [e.target.name]: e.target.value })
-                    }} name="password" className="w-full px-3 py-1 my-3 rounded-md dark:bg-neutral-800 outline-none transition-all border dark:border-neutral-700 border-neutral-400 focus:border-violet-500 focus:ring-1 focus:ring-violet-200" />
+                    }} name="password" className="w-full px-3 py-1 my-3 rounded-md dark:bg-neutral-800 outline-none transition-all border dark:border-neutral-700 border-neutral-400 focus:border-blue-500 focus:ring-1 focus:ring-blue-200" />
 
-                    <button type="submit" className="w-full px-3 py-1 my-3 text-neutral-200 rounded-md bg-violet-600 hover:bg-violet-500 transition-all duration-300">Submit</button>
-                    <p className="text-sm">Already have an account? <Link to={'/login'} className="underline text-violet-400">Login</Link></p>
+                    <button type="submit" className="w-full px-3 py-1 my-3 text-neutral-200 rounded-md bg-blue-600 hover:bg-blue-500 transition-all duration-300">Submit</button>
+                    <p className="text-sm">Already have an account? <Link to={'/login'} className="underline text-blue-400">Login</Link></p>
                 </form>
             </div>
         </>

@@ -105,7 +105,7 @@ function OpenGraphDetails({ removeProject, setLoading, description, link, author
                             return <span onClick={(e) => {
                                 e.stopPropagation();
                                 navigate(`/technologies/${data}`)
-                            }} key={index} className='rounded-3xl  flex max-w-fit items-center bg-violet-300 hover:scale-95 text-black py-0.5 my-1 px-3  gap-1  transition-all duration-300 shadow-lg'>
+                            }} key={index} className='rounded-3xl  flex max-w-fit items-center bg-blue-300 hover:scale-95 text-black py-0.5 my-1 px-3  gap-1  transition-all duration-300 shadow-lg'>
                                 {data}
                             </span>
                         })}
@@ -122,7 +122,7 @@ function OpenGraphDetails({ removeProject, setLoading, description, link, author
                             </div>
                         </Link>
                     ) :
-                        <Link to={link} className='underline underline-offset-2 text-violet-500'>{link}</Link>
+                        <Link to={link} className='underline underline-offset-2 text-blue-500'>{link}</Link>
                     }
 
                     {/*images */}
@@ -148,7 +148,7 @@ function OpenGraphDetails({ removeProject, setLoading, description, link, author
                                 <BiHeart className={`text-xl`} />
                             }
                             <span className='w-5 h-5 text-sm flex justify-center items-center '>{LikeState.likeCount}</span>
-                            {loadingLike && <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-violet-700"></div>}
+                            {loadingLike && <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-blue-700"></div>}
                         </button>
                     </div>
                 </div>

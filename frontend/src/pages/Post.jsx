@@ -110,12 +110,12 @@ export default function Post() {
             <div className=" w-full">
               <textarea name="review" value={review.text} onChange={(e) => {
                 setReview({ ...review, text: e.target.value })
-              }} placeholder='Description of your Review' className='w-full resize-none px-3 py-1 my-1 rounded-md dark:bg-neutral-900 outline-none transition-all border dark:border-neutral-800 border-neutral-400 focus:border-violet-500 focus:ring-1 focus:ring-violet-200' cols="30" rows="3">
+              }} placeholder='Description of your Review' className='w-full resize-none px-3 py-1 my-1 rounded-md dark:bg-neutral-900 outline-none transition-all border dark:border-neutral-800 border-neutral-400 focus:border-blue-500 focus:ring-1 focus:ring-blue-200' cols="30" rows="3">
               </textarea>
-              <button type="submit" onClick={handleReview} className="w-full px-3 py-1 mb-3 text-neutral-200 rounded-md bg-violet-600 hover:bg-violet-500 transition-all duration-300" >Submit</button>
+              <button type="submit" onClick={handleReview} className="w-full px-3 py-1 mb-3 text-neutral-200 rounded-md bg-blue-600 hover:bg-blue-500 transition-all duration-300" >Submit</button>
             </div>
             {reviews.length == 0 ?
-              <p className="text-center text-violet-600 text-2xl block "> No review yet!!</p>
+              <p className="text-center text-blue-600 text-2xl block "> No review yet!!</p>
               :
               reviews.map((value, index) => {
                 return <Review key={index} {...value} onDelete={() => {

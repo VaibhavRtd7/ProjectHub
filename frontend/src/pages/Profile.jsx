@@ -100,10 +100,10 @@ export default function Profile() {
                     </div>
                 </div>
                 <ul className='mx-auto flex dark:bg-neutral-900 bg-neutral-100 backdrop-blur-sm  lg:w-2/3 sm:w-3/4  w-[95%]  rounded-md  my-5 border  dark:border-neutral-800 py-4 px-3 justify-evenly items-center'>
-                    <li className={`cursor-pointer ${tabName === "Project" ? "text-violet-400" : ""}`} onClick={() => {
+                    <li className={`cursor-pointer ${tabName === "Project" ? "text-blue-400" : ""}`} onClick={() => {
                         setTabName("Project")
                     }}>Projects</li>
-                    <li className={`cursor-pointer ${tabName === "Review" ? "text-violet-400" : ""}`} onClick={() => {
+                    <li className={`cursor-pointer ${tabName === "Review" ? "text-blue-400" : ""}`} onClick={() => {
                         setTabName("Review")
                     }}>Reviews</li>
                 </ul>
@@ -111,7 +111,7 @@ export default function Profile() {
                     {tabName === 'Project' &&
                         <motion.div className="w-full flex flex-col items-center gap-2" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
                             {projects.length == 0 ?
-                                <p className="text-center text-violet-600 text-2xl"> No projects yet!!</p>
+                                <p className="text-center text-blue-600 text-2xl"> No projects yet!!</p>
                                 :
                                 projects.map((project, index) => {
                                     // console.log(project);
@@ -127,7 +127,7 @@ export default function Profile() {
                     {tabName === 'Review' &&
                         <motion.div className="w-full flex flex-col items-center gap-2" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
                             {reviews.length == 0 ?
-                                <p className="text-center text-violet-600 text-2xl"> No review yet!!</p>
+                                <p className="text-center text-blue-600 text-2xl"> No review yet!!</p>
                                 :
                                 reviews.map((review, index) => {
                                     // console.log(project);

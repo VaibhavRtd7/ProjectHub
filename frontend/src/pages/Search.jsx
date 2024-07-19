@@ -31,7 +31,7 @@ function Search() {
                 }} onChange={(e) => setQuery(e.target.value.trim())} value={query} placeholder='Search...' className=' rounded-md sm:w-[60%] w-full px-3 py-2 dark:bg-neutral-800 bg-neutral-200 outline-none  transition-all border-none focus:ring-2 focus:ring-neutral-700' />
                 <button onClick={search} className="p-2 mx-2 flex justify-center items-center rounded-full dark:hover:bg-neutral-800 hover:bg-white"><CgSearch className="text-2xl" /></button>
             </div>
-            {projects.length == 0 && <p className="text-3xl text-violet-600 text-center m-3">No Project Found</p>}
+            {projects.length == 0 && <p className="text-3xl text-blue-600 text-center m-3">No Project Found</p>}
             {loading && <Loading text={`Searching for ${query}...`} />}
             {!loading && <div className=" mx-auto lg:w-[60%] px-2 sm:w-3/4 w-full flex flex-col justify-center items-center  pb-2">
                 {projects.map((project, index) => {

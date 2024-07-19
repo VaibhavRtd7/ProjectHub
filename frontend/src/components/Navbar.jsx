@@ -86,14 +86,14 @@ export default function Navbar({ isAuthenticated, setIsAuthenticated, sidebar, s
               <Link
                 to="/signup"
                 onClick={() => setDropDown(false)}
-                className="flex-shrink-0 px-4 py-2 text-base font-semibold text-white bg-violet-500 rounded-3xl shadow-md hover:bg-violet-400 hover:scale-95 transition-all"
+                className="flex-shrink-0 px-4 py-2 text-base font-semibold text-white bg-blue-500 rounded-3xl shadow-md hover:bg-blue-400 hover:scale-95 transition-all"
               >
                 Sign up
               </Link>
               <Link
                 to="/login"
                 onClick={() => setDropDown(false)}
-                className="flex-shrink-0 px-4 py-2 text-base font-semibold text-white bg-violet-500 rounded-3xl shadow-md hover:bg-violet-400 hover:scale-95 transition-all"
+                className="flex-shrink-0 px-4 py-2 text-base font-semibold text-white bg-blue-500 rounded-3xl shadow-md hover:bg-blue-400 hover:scale-95 transition-all"
               >
                 Log in
               </Link>

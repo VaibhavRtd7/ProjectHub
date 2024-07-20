@@ -144,7 +144,7 @@ const sendMail = async (email, uniqueString) => {
         <body>
             <div class="container">
                 <div class="content">
-                    <h1>Welcome to Dev Critique!</h1>
+                    <h1>Welcome to PROJECT HUB!</h1>
                     <p>Thank you for signing up with us. To complete your registration, please verify your email address by clicking the button below.</p>
                     <p><a href=${process.env.API_LINK}api/verify/${uniqueString} class="button">Verify Email</a></p>
                     <p>If you did not sign up with us, please ignore this email.</p><br>
@@ -154,7 +154,7 @@ const sendMail = async (email, uniqueString) => {
                     <p>Feel free to contact us on our <a href="mailto:${process.env.EMAIL_ID}?subject=Feedback">email</a>
                      if you have any questions.</p>
                     <p>Best regards,</p>
-                    <p>Dev Critique Team</p>
+                    <p>PROJECT HUB Team</p>
                 </div>
             </div>
         </body>
@@ -282,7 +282,7 @@ const sendResetMail = async (email, uniqueString) => {
         <body>
             <div class="container">
                 <div class="content">
-                    <h1>Hello Dev Critique User!</h1>
+                    <h1>Hello PROJECT HUB User!</h1>
                     <p>Thank you for being with us. To complete your password reset, please follow by clicking the button below.</p>
                     <p><a href='https://devcritique.vercel.app/reset-password/${uniqueString}' class="button">Reset Password</a></p>
                     <p>If you did not made this request, please ignore this email.</p><br>
@@ -292,7 +292,7 @@ const sendResetMail = async (email, uniqueString) => {
                     <p>Feel free to contact us on our <a href="mailto:${process.env.EMAIL_ID}?subject=Feedback">email</a>
                      if you have any questions.</p>
                     <p>Best regards,</p>
-                    <p>Dev Critique Team</p>
+                    <p>PROJECT HUB Team</p>
                 </div>
             </div>
         </body>

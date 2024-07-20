@@ -53,7 +53,7 @@ export default function ResetPassword() {
 	return (
 		<>
 			<Helmet>
-				<title>Devcritique | Reset Password</title>
+				<title>Showcase | Reset Password</title>
 			</Helmet>
 			{loading && <Loading className={'dark:bg-neutral-900/30 bg-neutral-100/30 h-[100vh] fixed top-0 backdrop-blur-[1px]'} text={"Loading"} />}
 

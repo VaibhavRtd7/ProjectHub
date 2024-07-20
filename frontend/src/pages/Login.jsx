@@ -39,7 +39,7 @@ export default function Login({ isAuthenticated, setIsAuthenticated }) {
     return (
         <>
             <Helmet>
-                <title>Devcritique | Login</title>
+                <title>Showcase | Login</title>
             </Helmet>
 
             <div className='max-w-2xl max-md:mx-10 my-10 px-3 py-5 dark:bg-neutral-900 bg-neutral-100 mx-auto rounded-md border dark:border-neutral-800 border-neutral-200 shadow-lg'>

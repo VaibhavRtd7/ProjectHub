@@ -1,4 +1,4 @@
-# DevCritique backend
+# ProjectHub backend
 
 ## Description
 - It is the backend API for [devcritique](https://github.com/Nilesh9106/DevCritique-frontend/) website

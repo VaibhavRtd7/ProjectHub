@@ -20,7 +20,7 @@ function Search() {
     return (
         <>
             <Helmet>
-                <title>Devcritique | Search</title>
+                <title>Showcase | Search</title>
             </Helmet>
             <div className='w-full  dark:bg-neutral-900/60 bg-neutral-100/60 p-3 flex justify-center items-center'>
                 <input type="text" onKeyDown={(e) => {

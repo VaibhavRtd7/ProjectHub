@@ -39,7 +39,7 @@ export default function Navbar({ isAuthenticated, setIsAuthenticated, sidebar, s
               className="h-9 aspect-square"
               alt="dev critique"
             />
-            DEV CRITIQUE
+            PROJECT HUB
           </Link>
         </div>
         <div className="flex items-center">
@@ -80,7 +80,7 @@ export default function Navbar({ isAuthenticated, setIsAuthenticated, sidebar, s
               <CgProfile className="text-7xl my-3" />
             </div>
             <p className="text-2xl  text-center font-bold">
-              Sign Up in your DevCritique Account
+              Sign Up in your ProjectHub Account
             </p>
             <div className="flex gap-3 my-4 justify-center ">
               <Link

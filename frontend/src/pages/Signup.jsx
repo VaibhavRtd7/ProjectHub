@@ -30,7 +30,7 @@ export default function Signup() {
     return (
         <>
             <Helmet>
-                <title>Devcritique | Sign up</title>
+                <title>Showcase | Sign up</title>
             </Helmet>
             <div className='max-w-2xl max-md:mx-10 my-10 px-3 py-5 dark:bg-neutral-900 bg-neutral-100 mx-auto rounded-md border dark:border-neutral-800 border-neutral-200 shadow-lg'>
                 <h1 className="text-center text-4xl my-2">Signup</h1>

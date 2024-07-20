@@ -28,7 +28,7 @@ export default function ForgotPassword() {
 	return (
 		<>
 			<Helmet>
-				<title>Devcritique | Forgot Password</title>
+				<title>Showcase | Forgot Password</title>
 			</Helmet>
 
 			{isMailSent &&

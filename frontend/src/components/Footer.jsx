@@ -9,13 +9,13 @@ export default function Footer() {
                     <div className="flex flex-col items-baseline space-y-6">
                         <div className="mx-auto">
                             <Link to="/" className="mx-auto flex items-center text-lg text-center  gap-2 transition duration-500 ease-in-out transform tracking-relaxed">
-                                <img src="/icon2.png" className="w-10 aspect-square " alt="Dev critique" /> Dev Critique
+                                <img src="/icon2.png" className="w-10 aspect-square " alt="Dev critique" /> ProjectHub
                             </Link>
                         </div>
                         <div className="mx-auto">
                             <span className="mx-auto mt-2 text-sm text-gray-500">
-                                Copyright © 2022 - 2023
-                                <Link to="/" className="mx-2 text-blue-500 hover:text-gray-500" rel="noopener noreferrer">@devcritique</Link>
+                                Copyright © 2023 - 2024
+                                <Link to="/" className="mx-2 text-blue-500 hover:text-gray-500" rel="noopener noreferrer">@ProjectHub</Link>
                             </span>
                         </div>
                     </div>

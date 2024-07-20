@@ -49,11 +49,11 @@ export default function Home({ sidebar, setSidebar }) {
     return (
         <>
             <Helmet>
-                <title>DevCritique - Share and Review Projects for Developers</title>
+                <title>ProjectHub - Share and Review Projects for Developers</title>
                 <meta name="description"
-                    content="DevCritique is a platform to share and review websites, apps, and software projects. Get valuable feedback from the community, assign status labels, rate reviews, and earn points for unlocking badges and achievements. Improve your projects with collaborative insights." />
+                    content="ProjectHub is a platform to share and review websites, apps, and software projects. Get valuable feedback from the community, assign status labels, rate reviews, and earn points for unlocking badges and achievements. Improve your projects with collaborative insights." />
                 <meta name="keywords"
-                    content="DevCritique, review platform, developers, websites, apps, software projects, feedback, collaborative insights, meta tags, badges, achievements" />
+                    content="ProjectHub, review platform, developers, websites, apps, software projects, feedback, collaborative insights, meta tags, badges, achievements" />
             </Helmet>
             <div className=" flex rounded lg:max-w-7xl md:max-w-2xl sm:max-w-xl max-w-md max-sm:px-0 my-2 mx-auto">
                 {(desktop || !sidebar) ?

@@ -101,7 +101,7 @@ export default function EditProfile() {
     return (
         <>
             <Helmet>
-                <title>Devcritique | Edit Profile</title>
+                <title>Showcase | Edit Profile</title>
             </Helmet>
             {loading && <Loading className={'dark:bg-neutral-900/30 bg-neutral-100/30 h-[100vh] fixed top-0 backdrop-blur-[1px]'} text={loadingText} />}
             <div className={`mx-auto lg:w-2/3 sm:w-3/4  w-[95%] flex flex-col justify-center  dark:bg-neutral-900/70 bg-neutral-100/70 rounded-md my-5 border dark:border-neutral-700  py-5 px-3  `}>

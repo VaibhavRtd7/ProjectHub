@@ -1,8 +1,8 @@
-# Project Name: DevCritique - Collaborative Project Review System
+# Project Name: ProjectHub - Collaborative Project Review System
 
 ## Overview
 
-DevCritique is a collaborative project review system built to facilitate the sharing and improvement of websites, apps, or software projects. With DevCritique, users can submit their projects, receive reviews and feedback from other users, and actively engage in refining their work. The platform allows project owners to manage reviews, assign labels, rate feedback, and reward helpful reviewers with points, badges, and achievements.
+DevCritique is a collaborative project review system built to facilitate the sharing and improvement of websites, apps, or software projects. With ProjectHub, users can submit their projects, receive reviews and feedback from other users, and actively engage in refining their work. The platform allows project owners to manage reviews, assign labels, rate feedback, and reward helpful reviewers with points, badges, and achievements.
 
 ## Features
 
@@ -17,11 +17,11 @@ DevCritique is a collaborative project review system built to facilitate the sha
 - **Points and Rewards**: Reviewers earn points based on their received ratings, allowing them to unlock badges and achievements.
 
 ## Live Preview
-Check out the live preview of DevCritique at [https://devcritique.vercel.app](https://devcritique.vercel.app).
+Check out the live preview of ProjectHub at [https://devcritique.vercel.app](https://devcritique.vercel.app).
 
 ## Installation and Setup
 
-To set up the DevCritique Collaborative Project Review System locally, follow these steps:
+To set up the ProjectHub Collaborative Project Review System locally, follow these steps:
 
 1. Clone the repository:
     ```bash
@@ -43,7 +43,7 @@ To set up the DevCritique Collaborative Project Review System locally, follow th
 4. Access the application by navigating to `http://localhost:3000` in your web browser.
 
 ## Usage
-1. Register for an account on the DevCritique platform.
+1. Register for an account on the ProjectHub platform.
 2. Log in to your account and submit a new project by providing its details and a link.
 3. Explore other projects submitted by users and provide insightful reviews with comments and feedback.
 4. As a project owner, manage reviews by assigning labels and rating them to acknowledge helpful feedback.

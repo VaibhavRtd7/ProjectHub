@@ -17,7 +17,7 @@ DevCritique is a collaborative project review system built to facilitate the sha
 - **Points and Rewards**: Reviewers earn points based on their received ratings, allowing them to unlock badges and achievements.
 
 ## Live Preview
-Check out the live preview of ProjectHub at [https://devcritique.vercel.app](https://devcritique.vercel.app).
+Check out the live preview of ProjectHub at [https://project-hub-frontend.vercel.app](https://project-hub-frontend.vercel.app).
 
 ## Installation and Setup
 

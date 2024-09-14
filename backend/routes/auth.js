@@ -286,10 +286,10 @@ const sendResetMail = async (email, uniqueString) => {
                 <div class="content">
                     <h1>Hello PROJECT HUB User!</h1>
                     <p>Thank you for being with us. To complete your password reset, please follow by clicking the button below.</p>
-                    <p><a href='https://devcritique.vercel.app/reset-password/${uniqueString}' class="button">Reset Password</a></p>
+                    <p><a href='https://project-hub-frontend.vercel.app/reset-password/${uniqueString}' class="button">Reset Password</a></p>
                     <p>If you did not made this request, please ignore this email.</p><br>
                     <p>If you found any trouble in reset, try copy and paste below link in browser.</p>
-                    <p>https://devcritique.vercel.app/reset-password/${uniqueString}</p>
+                    <p>https://project-hub-frontend.vercel.app/reset-password/${uniqueString}</p>
                     <br>
                     <p>Feel free to contact us on our <a href="mailto:${process.env.EMAIL_ID}?subject=Feedback">email</a>
                      if you have any questions.</p>
@@ -336,12 +336,12 @@ router.get("/verify/:uniqueString", async (req, res) => {
 			return;
 		}
 		if (user.validated) {
-			res.send("<h1>Email Already Verified</h1><br><a href='https://devcritique.vercel.app/login'>Login</a>");
+			res.send("<h1>Email Already Verified</h1><br><a href='https://project-hub-frontend.vercel.app/login'>Login</a>");
 		}
 		else {
 			user.validated = true;
 			await user.save();
-			res.send("<h1>Email Verified</h1><br><a href='https://devcritique.vercel.app/login'>Login</a>");
+			res.send("<h1>Email Verified</h1><br><a href='https://project-hub-frontend.vercel.app/login'>Login</a>");
 		}
 	} catch (error) {
 		res.send("<h1>Link invalid</h1>");

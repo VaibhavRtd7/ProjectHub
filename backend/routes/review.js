@@ -166,7 +166,7 @@ const sendReviewMail = async (email, projectId, review) => {
 				<div class="review-box">
             	<p><span class="reviewer-name">${review.author.username}:</span> ${review.text}</p>
 				</div>
-				<p><a href="https://devcritique.vercel.app/post/${projectId}" class="button">View New Review</a></p>
+				<p><a href="https://project-hub-frontend.vercel.app/post/${projectId}" class="button">View New Review</a></p>
 				<p>If you have any questions or need further assistance, please do not hesitate to reach out to us at <a href="mailto:${process.env.EMAIL_ID}?subject=Project Review">${process.env.EMAIL_ID}</a>. We are here to support you in any way we can.</p>
 			
 				<p>Thank you for being a part of the Dev Critique community. Your active participation will help you enhance your project and make it even better.</p>

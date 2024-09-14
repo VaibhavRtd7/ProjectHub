@@ -62,6 +62,7 @@ export default function Profile() {
                 {userInfo?.profilePicture && <meta name="twitter:image" content={userInfo?.profilePicture} />}
                 <meta name="twitter:card" content="summary_large_image" />
             </Helmet>
+
             {loading && <Loading text={loadingText} />}
             {!loading && <>
                 <div className={`mx-auto lg:w-2/3 sm:w-3/4  w-[95%] flex justify-center  dark:bg-neutral-900/70 bg-neutral-100/70 rounded-md my-5 border dark:border-neutral-800  py-5 px-3  `}>
@@ -99,6 +100,7 @@ export default function Profile() {
                         </div>
                     </div>
                 </div>
+                
                 <ul className='mx-auto flex dark:bg-neutral-900 bg-neutral-100 backdrop-blur-sm  lg:w-2/3 sm:w-3/4  w-[95%]  rounded-md  my-5 border  dark:border-neutral-800 py-4 px-3 justify-evenly items-center'>
                     <li className={`cursor-pointer ${tabName === "Project" ? "text-blue-400" : ""}`} onClick={() => {
                         setTabName("Project")
@@ -107,6 +109,7 @@ export default function Profile() {
                         setTabName("Review")
                     }}>Reviews</li>
                 </ul>
+
                 <div className='mx-auto max-sm:pb-20 lg:w-2/3 sm:w-3/4 w-[95%] flex  rounded-md my-3 items-center'>
                     {tabName === 'Project' &&
                         <motion.div className="w-full flex flex-col items-center gap-2" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>

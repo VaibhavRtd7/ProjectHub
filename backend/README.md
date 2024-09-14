@@ -1,7 +1,7 @@
 # ProjectHub backend
 
 ## Description
-- It is the backend API for [devcritique](https://github.com/Nilesh9106/DevCritique-frontend/) website
+- It is the backend API for website
 
 ## Features
 - User authentication

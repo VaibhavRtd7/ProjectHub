@@ -19,13 +19,14 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 app.use(express.json());
+
 app.use('/api', auth);
-app.use('/api', project);
 app.use('/api', comment);
-app.use('/api', user);
+app.use('/api', project);
 app.use('/api', review);
-app.use('/api', upload);
 app.use('/api', search);
+app.use('/api', upload);
+app.use('/api', user);
 
 
 const dbURL = process.env.MONGODB_URI;

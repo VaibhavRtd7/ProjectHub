@@ -13,7 +13,7 @@ const projectSchema = new mongoose.Schema({
     likeCount: { type: Number, default: 0 },
 }, { timestamps: true });
 
-// Define the schema for the Reviews
+// Define the schema for the Reviews                     u
 const reviewSchema = new mongoose.Schema({
     project: { type: mongoose.Schema.Types.ObjectId, ref: 'Project' },
     author: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
@@ -34,7 +34,7 @@ const userSchema = new mongoose.Schema({
     email: {
         type: String,
         required: [true, 'Email is required'],
-        unique: true,
+        unique: false,
         trim: true,
         validate: {
             validator: isEmail,
@@ -64,6 +64,7 @@ userSchema.static('updatePoints', async function (id, change) {
 	user.points = user.points + change;
 	await user.save();
 })
+
 // Create the models based on the schemas
 const Project = mongoose.model('Project', projectSchema);
 const Review = mongoose.model('Review', reviewSchema);

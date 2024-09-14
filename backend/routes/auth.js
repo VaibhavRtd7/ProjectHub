@@ -161,6 +161,7 @@ const sendMail = async (email, uniqueString) => {
         </html>
         `,
 	};
+
 	await new Promise((resolve, reject) => {
 		transporter.sendMail(mailOptions, function (error, responce) {
 			if (error) {
@@ -245,6 +246,7 @@ const sendResetMail = async (email, uniqueString) => {
 			pass: process.env.EMAIL_PASSWORD,
 		},
 	});
+
 	var mailOptions = {
 		from: process.env.EMAIL_ID,
 		to: email,
@@ -299,6 +301,7 @@ const sendResetMail = async (email, uniqueString) => {
         </html>
         `,
 	};
+
 	await new Promise((resolve, reject) => {
 		transporter.sendMail(mailOptions, function (error, responce) {
 			if (error) {
@@ -322,6 +325,7 @@ function randString() {
 	}
 	return result;
 }
+
 
 router.get("/verify/:uniqueString", async (req, res) => {
 	try {
